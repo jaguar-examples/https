@@ -1,0 +1,5 @@
+name: https
+version: 0.4.0
+description: boilerplate for jaguar
+dependencies:
+  jaguar: '>=0.4.0 <0.5.0'
