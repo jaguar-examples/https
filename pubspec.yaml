@@ -1,5 +1,5 @@
 name: https
-version: 0.4.0
-description: boilerplate for jaguar
+version: 1.2.6
+description: Example showing how to use HTTPs with Jaguar
 dependencies:
-  jaguar: '>=0.4.0 <0.5.0'
+  jaguar: ^1.2.6
