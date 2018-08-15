@@ -1,5 +1,15 @@
-name: https
-version: 1.2.6
+name: jaguar_example_https
+version: 2.2.0
 description: Example showing how to use HTTPs with Jaguar
+homepage: https://jaguar-dart.github.io/
+authors:
+  - Ravi Teja Gudapati <tejainece@gmail.com>
+
+environment:
+  sdk: ">=2.0.0-dev.65 <3.0.0"
+
 dependencies:
-  jaguar: ^1.2.6
+  jaguar: ^2.2.6
+
+executable:
+  jaguar_example_https: server

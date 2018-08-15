@@ -11,7 +11,7 @@ main(List<String> args) async {
   final server = new Jaguar(securityContext: security);
   // Add your apis
   server.get('/hello', (_) => 'Hello');
+  server.log.onRecord.listen(print);
   // Launch server
-  await server.serve();
-  print("Serving on ${server.resourceName} ...");
+  await server.serve(logRequests: true);
 }
