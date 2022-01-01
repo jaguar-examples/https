@@ -1,14 +1,13 @@
-import 'dart:io';
 import 'package:jaguar/jaguar.dart';
 
 main(List<String> args) async {
   // Create SecurityContext from certificate and private key
-  final security = new SecurityContext()
+  final security = SecurityContext()
     ..useCertificateChain("bin/ssl/certificate.pem")
     ..usePrivateKey("bin/ssl/keys.pem");
 
   // Configure Jaguar with you securityContext
-  final server = new Jaguar(securityContext: security);
+  final server = Jaguar(securityContext: security, port: 8081);
   // Add your apis
   server.get('/hello', (_) => 'Hello');
   server.log.onRecord.listen(print);
